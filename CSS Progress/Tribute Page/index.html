@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Guide</title>
+     <link rel="stylesheet" href="TechnicalDocStyle.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML & CSS Guide</header>
+        <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+        <a class="nav-link" href="#CSS_Selectors">CSS Selectors</a>
+        <a class="nav-link" href="#Box_Model">Box Model</a>
+        <a class="nav-link" href="#Flexbox_Layout">Flexbox Layout</a>
+        <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+        <a class="nav-link" href="#CSS_Animations">CSS Animations</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="HTML_Basics">
+            <header>HTML Basics</header>
+            <p>HTML stands for HyperText Markup Language. It creates the structure of web pages.</p>
+            <p>Every HTML page starts with a DOCTYPE declaration and html tag. The head holds metadata. The body contains visible content.</p>
+            <p>Tags come in pairs like opening and closing. Some tags like img are self-closing.</p>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <p>Elements can have attributes. The class and id attributes help with styling.</p>
+            <ul>
+                <li>Use semantic tags like header, nav, main, and footer</li>
+                <li>Always validate your HTML code</li>
+                <li>Nest elements properly</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="CSS_Selectors">
+            <header>CSS Selectors</header>
+            <p>CSS selectors target HTML elements. The basic selector is the element name.</p>
+            <p>Class selectors use a dot. They target elements with that class name.</p>
+            <code>.container { background: white; }</code>
+            <p>ID selectors use the hash symbol. Each ID should be unique on a page.</p>
+            <ul>
+                <li><code>h1</code> targets all h1 elements</li>
+                <li><code>.menu</code> targets elements with class menu</li>
+                <li><code>#header</code> targets element with id header</li>
+            </ul>
+            <p>Attribute selectors target based on attributes like <code>[type="text"]</code>.</p>
+        </section>
+
+        <section class="main-section" id="Box_Model">
+            <header>Box Model</header>
+            <p>Every HTML element is a rectangular box. It has content, padding, border, and margin.</p>
+            <p>Content is the actual text or image. Padding creates space inside the border.</p>
+            <code>box-sizing: border-box;</code>
+            <p>Border sits between padding and margin. Margin creates space outside the border.</p>
+            <ul>
+                <li>Width includes content + padding + border</li>
+                <li>Use border-box for easier sizing</li>
+                <li>Margin collapses between elements</li>
+            </ul>
+            <p>Box-sizing property changes how width and height get calculated.</p>
+        </section>
+
+        <section class="main-section" id="Flexbox_Layout">
+            <header>Flexbox Layout</header>
+            <p>Flexbox makes it easy to align items in one dimension. Set display to flex on the container.</p>
+            <p>Flex-direction controls row or column layout. Justify-content aligns on the main axis.</p>
+            <code>display: flex; justify-content: space-between;</code>
+            <ul>
+                <li>Works great for navigation bars</li>
+                <li>Centers items easily</li>
+                <li>Handles different screen sizes</li>
+            </ul>
+            <p>Align-items controls cross-axis alignment. Flex-wrap allows items to wrap.</p>
+        </section>
+
+        <section class="main-section" id="Responsive_Design">
+            <header>Responsive Design</header>
+            <p>Responsive design adapts to different screen sizes. Use relative units like percentages.</p>
+            <p>Media queries apply styles at specific breakpoints. Viewport meta tag is essential.</p>
+            <code>@media (max-width: 768px) { ... }</code>
+            <ul>
+                <li>Start with mobile-first approach</li>
+                <li>Test on real devices</li>
+                <li>Use flexible grid systems</li>
+            </ul>
+            <p>Flexible images scale with containers. Max-width of 100% prevents overflow.</p>
+        </section>
+
+        <section class="main-section" id="CSS_Animations">
+            <header>CSS Animations</header>
+            <p>CSS animations bring elements to life. Use keyframes to define animation steps.</p>
+            <p>Transitions create smooth changes on hover or focus. They work with most properties.</p>
+            <code>transition: all 0.3s ease;</code>
+            <ul>
+                <li>Keep animations short and subtle</li>
+                <li>Use transform for better performance</li>
+                <li>Animation-fill-mode controls end states</li>
+            </ul>
+            <p>Transform properties move, rotate, and scale elements efficiently.</p>
+        </section>
+    </main>
+</body>
+</html>
