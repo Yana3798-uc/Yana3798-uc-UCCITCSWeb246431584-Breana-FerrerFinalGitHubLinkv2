@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e6f0ff; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#survey-container {
+  background: #ffffff; 
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 64, 128, 0.2); 
+  max-width: 600px;
+  width: 100%;
+}
+
+h1#title {
+  color: #00264d; 
+  text-align: center;
+  margin-bottom: 0.2rem;
+  text-shadow: 1px 1px 2px #cce0ff;
+}
+
+p#description {
+  text-align: center;
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+  color: #003366; 
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #004080; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 0.3rem;
+  border: 1px solid #004080;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: inherit;
+  background: #f0f8ff; 
+  color: #00264d; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #00264d;
+  box-shadow: 0 0 5px 2px #99bbff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.radio-group,
+.checkbox-group {
+  margin-top: 0.5rem;
+}
+
+.radio-group label,
+.checkbox-group label {
+  font-weight: normal;
+  color: #00264d; 
+  margin-right: 1.5rem;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.hint {
+  font-size: 0.9rem;
+  color: #0066cc;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+button#submit {
+  margin-top: 2rem;
+  width: 100%;
+  background: #004080;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button#submit:hover {
+  background: #003366;
+  box-shadow: 0 0 12px #3366cc;
+}
