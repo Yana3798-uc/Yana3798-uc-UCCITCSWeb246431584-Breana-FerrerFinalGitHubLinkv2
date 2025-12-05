@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Survey Form</title>
+  <link rel="stylesheet" href="SurveyWebStyle.css" />
+</head>
+<body>
+  <div id="survey-container">
+    <h1 id="title">Personal Interests and Personality Survey</h1>
+    <p id="description">Please fill out this survey to share your hobbies, dream job, and personality traits.</p>
+
+    <form id="survey-form">
+      
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+
+      <label id="number-label" for="number">Age:</label>
+      <input type="number" id="number" name="age" placeholder="Enter your age (1-90)" min="1" max="90" required />
+
+      <label for="hobby">Enter your favorite hobby:</label>
+      <input type="text" id="hobby" name="hobby" placeholder="Type your favorite hobby" required />
+
+      <label for="dream-job">What is your dream job?</label>
+      <input type="text" id="dream-job" name="dream-job" placeholder="Type your dream job" required />
+
+      <label>Which personality traits describe you? (Enter 8 types of personality)</label>
+<input type="text" id="personality" name="personality" placeholder="e.g., extraverted, intuitive, thinking, judging" required />
+
+
+      <label>Preferred learning style:</label>
+      <select id="learning-style" name="learning-style" required>
+        <option value="" disabled selected>Select one</option>
+        <option value="visual">Visual (diagrams, videos)</option>
+        <option value="auditory">Auditory (lectures, discussions)</option>
+        <option value="reading">Reading/Writing</option>
+        <option value="kinesthetic">Kinesthetic (hands-on)</option>
+      </select>
+
+      <label>What is your preference interms of collaborating with others? (Select all that apply)</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="collaboration" value="online" /> Online tools (Discord, Google Docs)</label>
+        <label><input type="checkbox" name="collaboration" value="inperson" /> In-person meetings</label>
+        <label><input type="checkbox" name="collaboration" value="email" /> Email updates</label>
+        <label><input type="checkbox" name="collaboration" value="async" /> Asynchronous (recorded updates)</label>
+      </div>
+
+      <label>What devices do you use most for work/study? (Select one)</label>
+      <div class="radio-group">
+        <label><input type="radio" name="device" value="mobile" required /> Mobile Phone/Tablet</label>
+        <label><input type="radio" name="device" value="laptop" /> Laptop</label>
+        <label><input type="radio" name="device" value="desktop" /> Desktop PC</label>
+        <label><input type="radio" name="device" value="multiple" /> Multiple devices</label>
+      </div>
+
+      <label for="comments">Additional comments:</label>
+      <textarea id="comments" name="comments" placeholder="Tell us more about yourself..."></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
